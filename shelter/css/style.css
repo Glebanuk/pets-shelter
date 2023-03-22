@@ -1,0 +1,100 @@
+html {
+    /* font-family: "Arial", sans-serif; */
+    font-family: "Georgia", sans-serif;
+}
+
+*,*::before,::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+title{
+    font-family: "Georgia", sans-serif;
+
+}
+.descr{
+font-family: "Arial", sans-serif;
+
+}
+.link{
+    text-decoration: none;
+    cursor: pointer;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* header start */
+header{
+    background-color: black;
+
+}
+.header__wrapper{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    margin-bottom: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: #F1CDB3;
+    letter-spacing: 0.06em;
+    /* line-height: 110%; */
+
+
+}
+.descr_logo{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    color: #FAFAFA;
+    letter-spacing: 0.1em;
+
+}
+
+.nav__list{
+    display: flex;
+}
+
+.nav_list_link{
+    margin-right: 35px;
+
+}
+.nav__link{
+    padding-bottom: 3px;
+}
+.nav__link:hover{
+    border-bottom: 3px solid #F1CDB3;
+    
+}
+
+.nav__link.active {
+    color: #FAFAFA;
+    padding-bottom: 3px;
+    border-bottom: 3px solid #F1CDB3
+}
+
+
+.nav_list_link:last-child{
+    margin-right:  0;
+}
+.nav__link{
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+color: #CDCDCD;
+}
+
+/* /header  */
+/*main start */
+
+.intro{
+    background: url('../img/start-screen-gradient-background.jpg');
+}
