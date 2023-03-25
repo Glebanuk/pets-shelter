@@ -1,3 +1,4 @@
+
 :root{
     --titles-text-color:#545454;
     --secondary-text-color:#FFFFFF;
@@ -5,7 +6,7 @@
 html {
     /* font-family: "Arial", sans-serif; */
     font-family: "Georgia", sans-serif;
-    
+    scroll-behavior: smooth;
 }
 
 *,*::before,::after{
