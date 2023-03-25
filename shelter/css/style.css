@@ -5,6 +5,7 @@
 html {
     /* font-family: "Arial", sans-serif; */
     font-family: "Georgia", sans-serif;
+    
 }
 
 *,*::before,::after{
@@ -220,11 +221,14 @@ color: #CDCDCD;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 
 }
+.title-pets_container{
+    padding: 80px 0 60px 0;
+}
 .title-our_pets{
     color: var(--titles-text-color);
 
     text-align: center;
-    padding: 80px 0 60px 0;
+    /* padding: 80px 0 60px 0; */
     margin: 0 auto;
     width: 400px;
     font-weight: 400;
@@ -406,4 +410,42 @@ letter-spacing: 0.06em;
 font-size: 12px;
 line-height: 18px;
 width: 380px;
+}
+
+
+/* footer */
+.footer{
+    background: url('../img/footer-gradient-background.png') no-repeat;
+    background-size: cover;
+}
+
+.footer_list{
+    display: flex;
+    padding-top: 56px;
+}
+.footer_title{
+    margin-bottom: 45px;
+    width: 280px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 1.3;
+    letter-spacing: 0.06em;
+}
+.contacts-pin{
+    display: inline-block;
+    color: #F1CDB3;
+    font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+margin-bottom: 45px;
+}
+.contacts-pin:hover{
+    color: #cfad94;
+}
+.footer_pic{
+    margin-right: 20px
+}
+.location_text{
+    display: inline-block;
 }
