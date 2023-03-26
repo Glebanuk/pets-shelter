@@ -1,0 +1,254 @@
+
+:root{
+    --titles-text-color:#545454;
+    --secondary-text-color:#FFFFFF;
+}
+html {
+    /* font-family: "Arial", sans-serif; */
+    font-family: "Georgia", sans-serif;
+    scroll-behavior: smooth;
+}
+
+*,*::before,::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+title{
+    font-family: "Georgia", sans-serif;
+
+}
+.descr{
+font-family: "Arial", sans-serif;
+
+}
+.link{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+/* header */
+header{
+  width: 100%;
+  top: 0;
+  left: 0;
+
+}
+.header__wrapper{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    margin-bottom: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: #292929;
+    letter-spacing: 0.06em;
+    /* line-height: 110%; */
+
+
+}
+.descr_logo{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    color: #292929;
+    letter-spacing: 0.1em;
+
+}
+
+.nav__list{
+    display: flex;
+}
+
+.nav_list_link{
+    margin-right: 35px;
+
+}
+.nav__link{
+    padding-bottom: 3px;
+}
+.nav__link:hover{
+    border-bottom: 3px solid #F1CDB3;
+
+}
+
+.nav__link.active {
+    color:#292929;
+    padding-bottom: 3px;
+    border-bottom: 3px solid #F1CDB3
+}
+
+
+.nav_list_link:last-child{
+    margin-right:  0;
+}
+.nav__link{
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+color: var(--titles-text-color);
+}
+/* our pets */
+
+.our_pets{
+background-color: #F6F6F6;
+margin-bottom: 100px;
+}
+.our-pets_title{
+    width: 400px;
+    margin: auto;
+    padding: 80px 0px 45px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 1.3;
+    letter-spacing: 0.06em;
+    color: var(--titles-text-color);
+}
+.pets_cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 30px 40px;
+    margin-bottom: 45px;
+}
+.pet_card{
+    text-align: center;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.pet_card:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.pet_name{
+    text-align: center;
+    margin: 30px auto ;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: var(--titles-text-color);
+}
+.more_btn{
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 30px;
+
+    width: 187px;
+    height: 52px;
+    padding: 15px 0px 15px 0px;
+
+    border-radius: 100px;
+    border:solid 2px  #F1CDB3;
+
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    color: #292929;;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+
+}
+.more_btn:hover{
+    color:#FAFAFA;
+    background-color: #F1CDB3;
+
+}
+
+
+.btn_block{
+    display: flex;
+    justify-content: space-between;
+    width: 340px;
+    margin: 0 auto;
+}
+.switch_btn{
+    margin-bottom: 45px;
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    border-radius: 100px;
+}
+.btn_block button:nth-child(3){
+    background-color: #F1CDB3;
+    border:#F1CDB3 ;
+}
+
+.btn_block button:nth-child(4){
+    border:2px solid #F1CDB3 ;
+}
+.btn_block button:nth-child(4):hover{
+    background-color: #F1CDB3;
+    border:2px solid #F1CDB3 ;
+}
+.btn_block button:nth-child(4):active{
+    color: white;
+    background-color: #eed9ca;
+    border:2px solid #eed9ca ;
+}
+
+.btn_block button:nth-child(5){
+    border:2px solid #F1CDB3 ;
+}
+.btn_block button:nth-child(5):hover{
+    background-color: #F1CDB3;
+    border:2px solid #F1CDB3 ;
+}
+.btn_block button:nth-child(5):active{
+    color: white;
+    background-color: #eed9ca;
+    border:2px solid #eed9ca ;
+}
+/* footer */
+.footer{
+    background: url('../img/footer-gradient-background.png') no-repeat;
+    background-size: cover;
+    padding-top: 56px;
+}
+.footer_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts_list li{
+    margin-bottom: 40px;
+
+}
+.text{
+display: flex;
+}
+.addres-text{
+    display: inline-block;
+    width: 260px;
+
+}
+.footer_title{
+    width: 280px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 1.3;
+    letter-spacing: 0.06em;
+}
+.contact-text{
+    color: #F1CDB3;
+    font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+
+
+}
+.footer_pic{
+    margin-right: 20px
+}
