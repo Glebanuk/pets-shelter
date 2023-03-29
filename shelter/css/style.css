@@ -161,6 +161,7 @@ color: #CDCDCD;
     display: inline-block;
     text-align: center;
     border-radius: 100px;
+    transition: 0.5s;
 }
 .btn_link_not-only:hover{
     background-color:#cfad94 ;
@@ -286,6 +287,7 @@ height: 52px;
     color: #292929;;
     letter-spacing: 0.06em;
     cursor: pointer;
+    transition: 0.5s;
 }
 .more_btn:hover{
     color:#FAFAFA;
@@ -336,6 +338,7 @@ height: 52px;
     display: inline-block;
     text-align: center;
     border-radius: 100px;
+    transition: 0.5s;
 }
 .btn_link:hover{
     background-color:#cfad94 ;
@@ -434,6 +437,7 @@ letter-spacing: 0.06em;
     background-color: #F1CDB3;
     border-radius: 9px;
     color: var(--titles-text-color);
+    transition: 0.5s;
 }
 .payment_link:hover{
     background-color:#cfad94
