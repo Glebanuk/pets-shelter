@@ -30,9 +30,10 @@ font-family: "Arial", sans-serif;
 }
 
 .container{
-    width: 1200px;
+    width: 1280px;
     margin: 0 auto;
     position: relative;
+    padding: 0 40px 0 40px;
 }
 
 /* header start */
@@ -42,6 +43,7 @@ header{
   position: absolute;
   top: 0;
   left: 0;
+  margin-top: 14px;
 
 }
 .header__wrapper{
@@ -51,7 +53,7 @@ header{
     justify-content: space-between;
 }
 .logo{
-    margin-bottom: 8px;
+    margin-bottom: 16px;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -120,6 +122,7 @@ color: #CDCDCD;
     height: 900px;
     display: flex;
     align-items: center;
+    padding-top: 108px;
 }
 
 
@@ -143,8 +146,8 @@ color: #CDCDCD;
     font-size: 15px;
     line-height: 160%;
 }
-.btn_link{
-    width: 200px;
+.btn_link_not-only{
+    width: 206px;;
     height: 52px;
     padding: 15px 0px 15px 0px;
 
@@ -159,7 +162,7 @@ color: #CDCDCD;
     text-align: center;
     border-radius: 100px;
 }
-.btn_link:hover{
+.btn_link_not-only:hover{
     background-color:#cfad94 ;
 }
 .btn_link:active{
@@ -167,6 +170,7 @@ color: #CDCDCD;
 }
 
 .not_only_img{
+    padding-top: 80px;
    position: absolute;
    right:0;
 }
@@ -178,11 +182,18 @@ color: #CDCDCD;
 
 
 /* about */
-
+.about_container{
+    margin-top: 22px;
+    padding-left: 5px;
+}
+.about_img{
+    padding-top: 10px;
+}
 .about_blok{
     margin-bottom: 100px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 115px;
 }
 .title_about{
     margin-bottom: 25px;
@@ -196,7 +207,7 @@ color: #CDCDCD;
 .about_descr{
     font-weight: 400;
     font-size: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
     width: 430px;
     line-height: 1.6;
     color: #4C4C4C;
@@ -206,7 +217,130 @@ color: #CDCDCD;
 }
 
 /* our_friends */
-.our_friends{
+
+.our-friends{
+    padding-bottom: 100px;
+    background: #F6F6F6;
+}
+.our-friends__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.title-pets_container{
+    width: 400px;
+    padding-top: 80px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.title-our_pets{
+font-size: 35px;
+line-height: 1.3;
+letter-spacing: 0.06em;
+
+}
+.block_pets{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding-bottom: 28px;
+}
+
+
+.pet_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.swich-pets-list_btn{
+    display: inline-block;
+    width: 52px;
+height: 52px;
+}
+.pet_name{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+.more_btn{
+    display: inline-block;
+    text-align: center;
+
+
+    width: 187px;
+    height: 52px;
+    padding: 11px 0px 15px 0px;
+
+    border-radius: 100px;
+    border:solid 2px  #F1CDB3;
+
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    color: #292929;;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+.more_btn:hover{
+    color:#FAFAFA;
+    background-color: #F1CDB3;
+
+}
+.more_btn:active{
+    background-color: #bb9982;
+    border:solid 2px #bb9982;
+}
+.pets_list{
+    margin-bottom: 28px;
+    display: flex;
+    gap: 90px;
+}
+.pet_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    background: #FAFAFA
+}
+.pet_card:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+}
+.swich-pets-list_btn{
+
+    width: 52px;
+    height: 52px;
+    border-radius: 100px;
+    border: solid 2px #F1CDB3 ;
+    transition: 0.5s;}
+
+.swich-pets-list_btn:hover{
+    background-color:  #F1CDB3;
+}
+.btn_link{
+    width: 255px;
+    height: 52px;
+    padding: 15px 0px 15px 8px;
+    font-weight: 400;
+    font-size: 17px;
+    color: #292929;
+    line-height: 1.3;
+    letter-spacing: 0.06em;
+    background-color: #F1CDB3;
+    display: inline-block;
+    text-align: center;
+    border-radius: 100px;
+}
+.btn_link:hover{
+    background-color:#cfad94 ;
+}
+/* .our_friends{
     margin-bottom: 100px;
     background: #F6F6F6;
 }
@@ -228,7 +362,6 @@ color: #CDCDCD;
     color: var(--titles-text-color);
 
     text-align: center;
-    /* padding: 80px 0 60px 0; */
     margin: 0 auto;
     width: 400px;
     font-weight: 400;
@@ -319,9 +452,8 @@ li.pet{
     display: inline-block;
     text-align: center;
     border-radius: 100px;
-}
+} */
 /* /our friends */
-
 
 /* help */
 
@@ -329,7 +461,7 @@ li.pet{
     color: var(--titles-text-color);
     margin-bottom: 60px;
     text-align: center;
-    padding: 80px 0 60px 0;
+    padding-top: 80px;
     margin: 0 auto;
     width: 310px;
     font-weight: 400;
@@ -340,19 +472,29 @@ li.pet{
 .help_list{
     margin-top: 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 120px
 }
 .help_irem{
     display: block;
     text-align: center;
 }
 .help_item_img{
-    margin-bottom: 30px;
+    padding-bottom: 28px
 }
-.help_list.second_list{
+.help_items_title{
+    font-size: 20px;
+line-height: 1.5;
+letter-spacing: 0.06em
+}
+
+
+.second_help_list{
+    margin-top: 50px;
     margin-bottom: 100px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 120px;
 }
 /* /help */
 
@@ -368,13 +510,16 @@ background: #F6F6F6;
 .donation_block{
     display: flex;
     justify-content: center;
+    gap: 30px;
 }
-.donation_container{
-    margin-left: 30px;
+.addition-dog{
+    margin-top: 6px;
 }
+
+
 .title_donation{
+    padding-bottom: 14px;
     color: var(--titles-text-color);
-    margin-bottom: 20px;
     width: 310px;
     font-weight: 400;
     font-size: 35px;
@@ -395,7 +540,7 @@ letter-spacing: 0.06em;
     justify-content: space-around;
     text-align: center;
     align-items: center;
-    width: 300px;
+    width: 350px;
     height: 43px;
     background-color: #F1CDB3;
     border-radius: 9px;
@@ -403,6 +548,11 @@ letter-spacing: 0.06em;
 }
 .payment_link:hover{
     background-color:#cfad94
+}
+.card_numbers{
+    font-size: 20px;
+    line-height: 1.1;
+    letter-spacing: 0.06em;
 }
 .payment_descr{
     color: var(--titles-text-color);
@@ -428,6 +578,8 @@ width: 380px;
     margin-bottom: 40px;
 
 }
+
+
 .text{
 display: flex;
 }
