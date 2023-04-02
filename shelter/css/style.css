@@ -515,7 +515,7 @@ line-height: 115%;
     .container{
         width: 748px;
         padding: 0 20px;
-        overflow: hidden;
+        /* overflow: hidden; */
 
     }
     .header__block{
@@ -523,6 +523,9 @@ line-height: 115%;
     }
 
     /* not only */
+    .not_only{
+        margin-bottom: 60px;
+    }
     .not_only__content{
         flex-direction: column;
         padding-top: 50px;
@@ -537,6 +540,24 @@ line-height: 115%;
     }
     .btn_link_not-only{
     margin-left: 127px;
+    }
+    
+    /* adout */
+    .about_blok{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 66px;
+    }
+    /* our-friends */
+    .block_pets {
+        gap: 10px;
+    }
+    .pets_list{
+        gap: 40px;
+    }
+    .pet_card:last-child{
+        display: none;
     }
 }
 
