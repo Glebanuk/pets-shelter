@@ -32,7 +32,7 @@ font-family: "Arial", sans-serif;
 .container{
     width: 1280px;
     margin: 0 auto;
-    position: relative;
+    /* position: relative; */
     padding: 0 40px 0 40px;
 }
 /* header */
@@ -258,3 +258,63 @@ line-height: 115%;
 .footer_pic{
     margin-right: 20px
 }
+/* media */
+@media screen and (max-width: 769px){
+    .container{
+        width: 748px;
+        padding: 0 20px;
+        overflow: hidden;
+
+    }
+    .header__block{
+        text-align: center;
+    }
+        /* pets cards */
+        .our-pets_title{
+            padding-bottom:30px;
+        }
+        .pets_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+        }
+        .btn_block{
+            padding-bottom: 30px
+        }
+        .pet_card:last-child{
+            display: none;
+        }
+        .pet_card:nth-child(7){
+            display: none;
+        }
+        /* footer */
+        .footer_wrapper{
+            flex-wrap: wrap;
+            padding-top: 32px;
+            justify-content: center
+        }
+            .contacts_list{
+            padding:0 30px ;
+            }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
