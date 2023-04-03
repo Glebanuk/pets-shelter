@@ -14,42 +14,52 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="fonts/fonts/arial/stylesheet.css">
+    <link rel="stylesheet" href="./css/adaptive.css">
     <title>Shelter</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__wrapper">
-                <div class="header__block">
-                    <a href="#" class="header-logo link">
-                        <h1 class="title logo">Cozy House </h1>
-                        <p class="descr descr_logo">Shelter for pets in Boston</p>
-                    </a>
-                </div>
-                <!-- Logo -->
-
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav_list_link"><a href="#" class="link nav__link active">About the shelter</a></li>
-                        <li class="nav_list_link"><a href="./pets.html" class="link nav__link">Our pets</a></li>
-                        <li class="nav_list_link"><a href="#help" class="link nav__link">Help the shelter</a></li>
-                        <li class="nav_list_link"><a href="#contacts" class="link nav__link">Contacts</a></li>
-                    </ul>
-                </nav>
-
-            </div>
-        </div>
-    </header>
+    
     <main>
-        <section class="not_only">
-            <div class="container">
+        <section class=" not_only">
+            <div class="container not_only_container">
+                <header class="header ">
+                    <!-- <div class="container"> -->
+                        <div class="header__wrapper">
+                            <div class="header__block">
+                                <a href="#" class="header-logo link">
+                                    <h1 class="title logo">Cozy House </h1>
+                                    <p class="descr descr_logo">Shelter for pets in Boston</p>
+                                </a>
+                            </div>
 
+
+                            <nav class="nav">
+                                <ul class="nav__list">
+                                    <li class="nav_list_link"><a href="#" class="link nav__link active">About the shelter</a></li>
+                                    <li class="nav_list_link"><a href="./pets.html" class="link nav__link">Our pets</a></li>
+                                    <li class="nav_list_link"><a href="#help" class="link nav__link">Help the shelter</a></li>
+                                    <li class="nav_list_link"><a href="#contacts" class="link nav__link">Contacts</a></li>
+                                </ul>
+                                <div class="header__nav-close">
+                                    <span class="header__nav-close-line"></span>
+                                    <span class="header__nav-close-line"></span>
+                                    <span class="header__nav-close-line"></span>
+                                </div>
+                            </nav>
+                            <div class="header__burger burger">
+                                <span class="burger__line   burger__line_first"></span>
+                                <span class="burger__line burger__line_second"></span>
+                                <span class="burger__line burger__line_third"></span>
+                            </div>
+            
+                        </div>
+                    <!-- </div> -->
+                </header>
                 <div class="not_only__content">
 
                     <div class="not_only_block">
                         <h2 class="title not_only_title">Not only people need a house</h2>
-
                         <p class="descr not_only__descr">We offer to give a chance to a little and nice puppy with an
                             extremely wide and open heart. He or she will love you more than anybody else in the world,
                             you will see!</p>
@@ -57,7 +67,7 @@
                     </div>
 
                     <div class="not_only_img">
-                        <img src="./img/start-screen-puppy.png" alt="puppy" width="698" height="728">
+                        <img src="./img/start-screen-puppy.png" alt="puppy"  class="not-only-puppy">
                     </div>
 
                 </div>
@@ -68,7 +78,7 @@
 
         </section>
         <section class="about">
-            <div class="container">
+            <div class="container about__container">
 
                 <div class="about_blok">
 
@@ -109,7 +119,7 @@
         <div class="block_pets" >
 
 
-                <button type="button" class="swich-pets-list_btn"> <span> <img src="./img/arrows/arrow_l.svg"
+                <button type="button" class="swich-pets-list_btn desctop-btn"> <span> <img src="./img/arrows/arrow_l.svg"
                 alt="arrow"> </span>
                 </button>
 
@@ -141,14 +151,23 @@
                 </li>
 
             </ul>
+            
 
 
-                <button type="button" class="swich-pets-list_btn"> <span> <img src="./img/arrows/arrow_r.svg"
+                <button type="button" class="swich-pets-list_btn desctop-btn"> <span> <img src="./img/arrows/arrow_r.svg"
                     alt="arrow"> </span>
                 </button>
 
 
 
+            </div>
+            <div class="mob-btn">
+                <button type="button" class="swich-pets-list_btn mobile-btn"> <span> <img src="./img/arrows/arrow_l.svg"
+                    alt="arrow"> </span>
+                    </button>
+                    <button type="button" class="swich-pets-list_btn mobile-btn"> <span> <img src="./img/arrows/arrow_r.svg"
+                        alt="arrow"> </span>
+                    </button>
             </div>
 
                 <div class="btn_container">
@@ -188,9 +207,6 @@
                         <img src="./img/help_img/icon-shampoos.svg" alt="shampoos" class="help_item_img">
                         <h3 class="help_items_title title">Shampoos</h3>
                     </li>
-                </ul>
-
-                <ul class="second_help_list">
                     <li class="help_irem">
                         <img src="./img/help_img/icon-vitamins.svg" alt="food" class="help_item_img">
                         <h3 class="help_items_title title">Vitamins</h3>
@@ -213,8 +229,8 @@
             </div>
 
         </section>
-        <section class="in_addition" >
-            <div class="container">
+        <section class="container in_addition" >
+            <!-- <div class="container"> -->
 
                 <div class="donation_block">
 
@@ -240,12 +256,12 @@
 
 
                 </div>
-            </div>
+            <!-- </div> -->
 
         </section>
     </main>
-    <footer class="footer" id="contacts">
-        <div class="container">
+    <footer class=" container footer" id="contacts">
+        <!-- <div class="container"> -->
 
             <div class="footer_wrapper">
 
@@ -282,7 +298,7 @@
             <img src="./img/footer-puppy.png" alt="footer-puppy" class="footer_puppy">
         </div>
 
-    </div>
+    <!-- </div> -->
 
 </footer>
 <script src="./index.js"></script>
