@@ -103,6 +103,31 @@ font-weight: 400;
 font-size: 15px;
 color: var(--titles-text-color);
 }
+.header__burger{
+    display: none;
+    width: 30px;
+    height: 22px;
+    position: relative;
+}
+.burger__line{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    position: absolute;
+    left: 0;
+
+}
+.burger__line_first{
+    top: 0;
+}
+.burger__line_second{
+    bottom: 0;
+}
+.burger__line_third{
+    top: 50%;
+    transform:translateY(-50%) ;
+}
 /* our pets */
 
 .our_pets{
@@ -258,7 +283,7 @@ line-height: 115%;
 .footer_pic{
     margin-right: 20px
 }
-/* media */
+/* media 768px ------------------------------------------------------------------------------*/
 @media screen and (max-width: 769px){
     .container{
         width: 748px;
@@ -298,8 +323,98 @@ line-height: 115%;
             padding:0 30px ;
             }
     }
+/* media 320px ------------------------------------------------------------------------------*/
+@media screen and (max-width: 321px){
+.container{
+    width: 320px;
+    padding: 0 20px;
+}
+.header__burger{
+    display: block;
+}
+.nav{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #292929;
+    z-index: 1;
+    padding: 40px;
+    transform: translateX(100%);
+}
+.nav__list{
+    flex-wrap: wrap;
+}
+.nav_list_link{
+    width: 100%;
+    margin-right: 0;
+}
+.nav__link{
+    font-size: 32px;
+    line-height: 1.6;
+}
+.header__nav-close{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+}
+.header__nav-close-line{
+    display: block;
+    height: 2px;
+    background-color:#F1CDB3 ;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    width: 100%;
+}
+/* our-pets -----------------------------------------*/
+.our-pets_title{
+    font-size: 25px;
+    width: 300px;
+    padding: 40px 14px 40px 0;
+}
+.pet_card:nth-child(4){
+    display: none;
+}
+.pet_card:nth-child(5){
+    display: none;
+}
+.pet_card:nth-child(6){
+    display: none;
+}
+.pet_card:nth-child(7){
+    display: none;
+}
+.pets_cards{
+    margin-bottom: 45px;
+    
+}
+.btn_block{
+        padding-bottom: 0px;
+        justify-content: space-between;
+        padding-right: 60px;
+}
+.switch_btn{
+display: inline;
+}
 
 
+
+
+
+
+.footer_title{
+    font-size: 25px;
+}
+.contacts_list{
+    padding: 0;
+    text-align: center;
+}
+}
 
 
 
